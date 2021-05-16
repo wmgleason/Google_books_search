@@ -14,7 +14,7 @@ function SaveBtn({ type = "default", className, children, onClick }) {
   const handleShow = () => setShow(true);
 
   // saves book to the database and brings up the modal window
-  conts click = () => {
+  const click = () => {
     handleShow();
     onClick();
   };
