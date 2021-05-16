@@ -9,7 +9,7 @@ module.exports = {
       .then((response) => res.json(response.data))
       .catch((err) => res.status(422).json(err));
   },
-  // find all books saved in db
+  // find all the books saved in db
   findAll: (req, res) => {
     db.Book.find(req.query)
       .then((dbModel) => res.json(dbModel))
