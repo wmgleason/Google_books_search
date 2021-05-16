@@ -2,7 +2,7 @@ import axios from "axios";
 // endpoint from googlebooks api
 const BaseUrl = "https://www.googleapis.com/books/v1/volumes?q=";
 
-exprort default {
+export default {
   // calls the Google Books API and retrieves books based on user input
   searchBooks: (query) => axios.get(BaseUrl + query),
   // get all books saved in the database
