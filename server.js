@@ -16,10 +16,10 @@ if (process.env.NODE_ENV === "production") {
 app.use("/api", apiRoutes);
 
 // Define API routes and run
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
-
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
+//Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks");
 
 app.listen(PORT, () => {
