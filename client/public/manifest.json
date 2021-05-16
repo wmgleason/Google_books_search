@@ -1,9 +1,6 @@
 {
   "short_name": "Google Book Search",
   "name": "Google Book Search using React",
-  "scripts": {
-    "start": "./index.html",
-    "test": "jest",
   "icons": [
     {
       "src": "favicon.ico",
