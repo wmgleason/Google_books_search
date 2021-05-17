@@ -1,18 +1,13 @@
-const express = require("express");
-const router = express.Router();
+const path = require("path");
+const router = require("express").Router();
+const apiRoutes = require("./api");
 
-const booksController = require("../controllers/booksController");
+// API Routes
+router.use("/api", apiRoutes);
 
-router
-  .route("/books")
-  .get(booksController.findAll)
-  // .get(booksController.getApi)
-  .post(booksController.save);
-
-router
-  .route("/books/:id")
-  .get(booksController.findById)
-  .put(booksController.update)
-  .delete(booksController.remove);
+// If no API routes are hit, then React app
+router.use((req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
 
 module.exports = router;
