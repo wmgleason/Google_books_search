@@ -1,13 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const apiRoutes = require("./routes/index");
-const path = require("path");
+require("dotenv").config();
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-// .env to hide sensitive info
+// .env
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
