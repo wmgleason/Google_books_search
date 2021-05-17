@@ -3,6 +3,8 @@ import Thumbnail from "../Thumbnail";
 import { Container, Row, Col } from "../Grid";
 import API from "../../utils/API";
 import "./style.css";
+import SaveBtn from "../SaveBtn";
+import DeleteBtn from "../DeleteBtn";
 
 // Renders a bootstrap list item
 export function BookList({ children }) {
