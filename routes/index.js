@@ -6,7 +6,7 @@ const booksController = require("../controllers/booksController");
 router
   .route("/books")
   .get(booksController.findAll)
-  // .get(booksController.searchApi)
+  // .get(booksController.getApi)
   .post(booksController.save);
 
 router
