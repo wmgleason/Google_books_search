@@ -60,5 +60,6 @@
   "bugs": {
     "url": "https://github.com/wmgleason/Google_books_search/issues"
   },
-  "homepage": "https://github.com/wmgleason/Google_books_search#readme"
+  "homepage": "https://github.com/wmgleason/Google_books_search#readme",
+  "devDependencies": {}
 }
